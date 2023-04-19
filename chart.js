@@ -28,7 +28,7 @@ const tooltip = d3.select("#tooltip");
 let data;
 
 // Load data from file
-d3.csv("../merged_data.csv").then(csvData => {
+d3.csv("merged_data.csv").then(csvData => {
     data = csvData;
 
     console.log(data);
