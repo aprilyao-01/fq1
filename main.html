@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Structure</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <label for="country-select">Select Country:</label>
+                <select id="country-select" class="form-control"></select>
+            </div>
+            <div class="col-md-4">
+                <label for="year-select">Select Year:</label>
+                <select id="year-select" class="form-control"></select>
+            </div>
+        </div>
+        <p>Put mouse over the chart to see the values🧐</p>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <svg id="donut-chart" width="600" height="600"></svg>
+            </div>
+        </div>
+    </div>
+    <div id="tooltip" class="hidden"></div>
+    <script src="chart.js"></script>
+</body>
+</html>
