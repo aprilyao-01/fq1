@@ -1,3 +1,4 @@
+#heatmap-tooltip,
 #tooltip {
     position: absolute;
     width: 200px;
@@ -12,11 +13,12 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     pointer-events: none;
 }
-
+#heatmap-tooltip.hidden,
 #tooltip.hidden {
     display: none;
 }
 
+#heatmap-tooltip,
 #tooltip p {
     margin: 0;
     font-family: sans-serif;
