@@ -10,7 +10,7 @@ const svg_heatmap = d3.select("#heatmap-chart")
 
 const tooltip_heatmap = d3.select("#heatmap-tooltip");
 
-d3.csv("../gdp_events.csv").then(data => {
+d3.csv("gdp_events.csv").then(data => {
     const years = Array.from(new Set(data.map(d => d.Year))).sort();
     const countries = Array.from(new Set(data.map(d => d.Country))).sort();
 
