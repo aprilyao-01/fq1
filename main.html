@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploratory Process Questions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h2 style="margin-left: 40px;">FQ1</h2>
+    <h4 style="width: 800px; color: gray; margin-left: 40px;">How does the economic structure (i.e., the proportion of GDP from agriculture, industry, and services sectors) of each country relate to their GDP growth rates?</h4>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <label for="country-select">Select Country:</label>
+                <select id="country-select" class="form-control"></select>
+            </div>
+            <div class="col-md-4">
+                <label for="year-select">Select Year:</label>
+                <select id="year-select" class="form-control"></select>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <svg id="donut-chart" width="600" height="600"></svg>
+            </div>
+        </div>
+        <p style="margin-left: 50px; margin-top: 20px;">Put mouse over the chart to see the values🧐</p>
+    </div>
+    <div id="tooltip" class="hidden"></div>
+    <script src="chart.js"></script>
+
+    <h2 style="margin-left: 40px;">FQ2</h2>
+    <h4 style="width: 800px; color: gray; margin-left: 40px;">How do specific events, such as the 2008-2009 financial crisis or the 2019-2020 COVID-19 pandemic, impact the GDP growth rates of the eight countries?</h4>
+    <p style="margin-left: 40px; margin-top: 20px;">Put mouse over the heatmap to see the values🧐</p>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <svg id="heatmap-chart" width="800" height="600"></svg>
+            </div>
+        </div>
+    </div>
+    <div id="heatmap-tooltip" class="hidden"></div>
+    <script src="heatmap.js"></script>
+</body>
+</html>
